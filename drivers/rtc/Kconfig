@@ -1811,4 +1811,11 @@ config RTC_DRV_GOLDFISH
 	  Goldfish is a code name for the virtual platform developed by Google
 	  for Android emulation.
 
+config RTC_DRV_RX8130
+	tristate "Epson RX8130CE"
+	help
+		If you say yes here you get support for the Epson
+		RX8130CE RTC chips.
+		
+
 endif # RTC_CLASS

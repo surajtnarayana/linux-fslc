@@ -117,20 +117,8 @@ dtb-$(CONFIG_ARCH_FSL_IMX8MQ) += fsl-imx8mq-ddr3l-arm2.dtb \
 				 fsl-imx8mq-evk-dp.dtb \
 				 fsl-imx8mq-evk-edp.dtb
 dtb-$(CONFIG_ARCH_FSL_IMX8MM) += fsl-imx8mm-evk.dtb \
-				 fsl-imx8mm-evk-ak4497.dtb \
-				 fsl-imx8mm-evk-m4.dtb \
-				 fsl-imx8mm-evk-ak5558.dtb \
-				 fsl-imx8mm-evk-audio-tdm.dtb \
-				 fsl-imx8mm-ddr3l-val.dtb \
-				 fsl-imx8mm-ddr4-evk.dtb \
-				 fsl-imx8mm-ddr4-val.dtb \
-				 fsl-imx8mm-evk-rm67191.dtb \
-				 fsl-imx8mm-evk-root.dtb \
-				 fsl-imx8mm-evk-inmate.dtb \
-				 fsl-imx8mm-evk-revb.dtb \
-				 fsl-imx8mm-evk-revb-rm67191.dtb \
-				 fsl-imx8mm-ddr4-evk-rm67191.dtb \
-				 fsl-imx8mm-ddr4-qca9377-evk.dtb
+				 fsl-imx8mm-ddr4-evk.dtb
+
 always		:= $(dtb-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb
