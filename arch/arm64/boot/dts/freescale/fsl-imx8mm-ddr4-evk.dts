@@ -60,9 +60,9 @@
 &usdhc1 {
 	#address-cells = <1>;
 	#size-cells = <0>;
-	pinctrl-0 = <&pinctrl_usdhc1>, <&pinctrl_wlan>;
-	pinctrl-1 = <&pinctrl_usdhc1_100mhz>, <&pinctrl_wlan>;
-	pinctrl-2 = <&pinctrl_usdhc1_200mhz>, <&pinctrl_wlan>;
+	pinctrl-0 = <&pinctrl_usdhc1>;
+	pinctrl-1 = <&pinctrl_usdhc1_100mhz>;
+	pinctrl-2 = <&pinctrl_usdhc1_200mhz>;
 	cap-power-off-card;
 	/delete-property/ vmmc-supply;
 };
