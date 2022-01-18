@@ -294,6 +294,7 @@ static int set_geometry_by_ecc_info(struct gpmi_nand_data *this)
 	geo->ecc_chunk0_size = chip->ecc_step_ds;
 	geo->ecc_chunkn_size = chip->ecc_step_ds;
 	geo->ecc_strength = round_up(chip->ecc_strength_ds, 2);
+	geo->ecc_strength <<= 1;
 	if (!gpmi_check_ecc(this))
 		return -EINVAL;
 
